@@ -1,0 +1,24 @@
+* {
+    margin: 0; /*8px delet */
+    padding: 0; /* delet all padding*/
+    outline: 0;/* delet all outline*/
+    border: 0;/* delet all border*/
+    box-sizing: border-box;/* что бы в ширину входило всё (пэдинги мэрджены и бордеры)*/
+}
+
+html {
+    font-size: 16px;/* задаюм фонт сайз*/
+}
+
+body {
+    font-size: 1rem;/* переводим в ремы*/
+    line-height: 1;/*высота строки 1*/
+}
+
+a {
+    text-decoration: none;/*подчёркивание ссылок и тд удаляем*/
+}
+
+ul, ol {
+    list-style: none;/**/
+}
