@@ -22,3 +22,32 @@ a {
 ul, ol {
     list-style: none;/**/
 }
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.1875rem;
+}
+
+.header__item {
+    display: inline-block;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    margin: 0 2%;
+}
+
+.header__heading {
+    width: 35%;
+}
+
+.header__menu {
+    width: 65%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+}
