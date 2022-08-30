@@ -8,6 +8,37 @@
     <link rel="stylesheet" href="../style/style.css">
 </head>
 <body>
-    
+    <header class="header">
+        <a href="../index.html" class="header__link">
+            Поиск
+        </a>
+        <a href="pages/registration.html" class="header__link">
+            Зарегестрироваться
+        </a>
+    </header>
+    <main class="main__authorization">
+        <h1 class="main__title">
+            Войти
+        </h1>
+        <form class="main__form" method="post" action="https://fom.in.ua/echo">
+            <p class="form__item">
+                <label>
+                    Адрес єлектронной почты
+                    <input type="email" name="email" placeholder="namesurname@gmail.com" autofocus="autofocus">
+                </label>
+                <label>
+                    Пароль
+                    <input type="password" name="password">
+                </label>
+            </p>
+            <label>
+                <input type="checkbox" name="checkbox1">
+                Запомнить меня
+            </label>
+            <label>
+                <input type="submit" name="submit" value="Войти" class="form__submit">
+            </label>
+        </form>
+    </main>
 </body>
 </html>
