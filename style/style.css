@@ -39,7 +39,7 @@ h3 {
 .header {
     display: flex;
     flex-direction: row;
-    margin: 0 2%;
+    margin: 3% 2%;
 }
 
 .header__heading {
