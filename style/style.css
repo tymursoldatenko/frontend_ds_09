@@ -60,3 +60,11 @@ h3 {
     justify-content: space-around;
     margin: 1%;
 }
+
+.main__authorization {
+    background-color: rgb(152, 152, 152);
+    border-radius: 20px;
+    width: 50%;
+    margin: 2% auto;
+    padding: 2%;
+}
