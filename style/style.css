@@ -68,3 +68,25 @@ h3 {
     margin: 2% auto;
     padding: 2%;
 }
+
+.main__title {
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.main__form,
+.form__item {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+}
+
+label {
+    margin: 1%;
+}
+
+.form__submit {
+    width: 10%;
+    margin: 1% 0 0 5%;
+}
