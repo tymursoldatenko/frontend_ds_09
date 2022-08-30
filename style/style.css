@@ -27,12 +27,13 @@ h1 {
     font-size: 2rem;
 }
 
-h2 {
+h3 {
     font-size: 1.1875rem;
 }
 
 .header__item {
     display: inline-block;
+    background-color: gold;
 }
 
 .header {
