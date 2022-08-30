@@ -38,7 +38,7 @@ h3 {
 
 .header {
     display: flex;
-    margin: 3% 2%;
+    margin: 2%;
     outline: 2px solid darkblue;
 }
 
@@ -53,4 +53,10 @@ h3 {
     align-items: flex-end;
     justify-content: space-around;
     outline: 2px solid red;
+}
+
+.header__authorization {
+    display: flex;
+    justify-content: space-around;
+    margin: 1%;
 }
