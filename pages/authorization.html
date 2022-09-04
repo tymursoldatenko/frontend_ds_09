@@ -21,28 +21,30 @@
         </a>
     </header>
     <main class="main__authorization">
-        <h1 class="main__title">
-            Войти
-        </h1>
-        <form class="main__form" method="post" action="https://fom.in.ua/echo">
-            <p class="form__item">
+        <div class="main__item">
+            <h1 class="main__title">
+                Войти
+            </h1>
+            <form class="main__form" method="post" action="https://fom.in.ua/echo">
+                <p class="form__item">
+                    <label>
+                        Адрес єлектронной почты
+                        <input type="email" name="email" placeholder="namesurname@gmail.com" autofocus="autofocus" class="email__input">
+                    </label>
+                    <label>
+                        Пароль : 
+                        <input type="password" name="password" class="password__input">
+                    </label>
+                </p>
                 <label>
-                    Адрес єлектронной почты
-                    <input type="email" name="email" placeholder="namesurname@gmail.com" autofocus="autofocus" class="email__input">
+                    <input type="checkbox" name="checkbox1">
+                    Запомнить меня
                 </label>
                 <label>
-                    Пароль : 
-                    <input type="password" name="password" class="password__input">
+                    <input type="submit" name="submit" value="Войти" class="form__submit">
                 </label>
-            </p>
-            <label>
-                <input type="checkbox" name="checkbox1">
-                Запомнить меня
-            </label>
-            <label>
-                <input type="submit" name="submit" value="Войти" class="form__submit">
-            </label>
-        </form>
+            </form>
+        </div>
     </main>
 </body>
 </html>
