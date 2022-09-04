@@ -55,18 +55,18 @@ h3 {
     outline: 2px solid red;
 }
 
-.header__authorization {
+.header__special {
     display: flex;
     justify-content: space-around;
     margin: 1%;
     background-color: rgba(240, 255, 255, 0.806);
 }
 
-.header__authorization .header__link {
+.header__special .header__link {
     color: rgb(0, 0, 0);
 }
 
-.main__authorization {
+.main__special {
     background-color: rgb(243, 243, 243);
     border: 2px solid rgb(168, 168, 168);
     border-radius: 20px;
@@ -98,7 +98,7 @@ label {
     border-radius: 20px;
 }
 
-.authorization {
+.special {
     background-image: url(../img/sea.jpg);
     background-size: cover;
 }
