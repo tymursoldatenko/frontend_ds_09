@@ -8,17 +8,35 @@
     <link rel="stylesheet" href="../style/style.css">
 </head>
 <body class="special">
-    <header class="header__special">
-        <a href="../index.html" class="header__link">
-            <h2>
-                Поиск
-            </h2>
-        </a>
-        <a href="registration.html" class="header__link">
-            <h2>
-                Зарегестрироваться
-            </h2>
-        </a>
+    <header class="header">
+        <div class="header__title">
+            <h1>
+                Tours Around The World
+            </h1>
+        </div>
+        <ul class="header__menu">
+            <li class="header__item">
+                <a href="../index.html" class="header__link">
+                    <h3> 
+                        Поиск
+                    </h3>
+                </a>
+            </li>
+            <li class="header__item">
+                <a href="additional.html" class="header__link">
+                    <h3> 
+                        Лучшие
+                    </h3>
+                </a>
+            </li>
+            <li class="header__item">
+                <a href="#" class="header__link">
+                    <h3> 
+                        Войти/Зарегестрироваться
+                    </h3>
+                </a>
+            </li>
+        </ul>
     </header>
     <main class="main__special">
         <div class="main__item">
@@ -39,6 +57,43 @@
                 <label>
                     <input type="checkbox" name="checkbox1">
                     Запомнить меня
+                </label>
+                <label>
+                    <input type="submit" name="submit" value="Войти" class="form__submit">
+                </label>
+            </form>
+        </div>
+        <div class="main__item">
+            <h1 class="main__title">
+                Зарегестрироваться
+            </h1>
+            <form class="main__form" method="post" action="https://fom.in.ua/echo">
+                <p class="form__item">
+                    <label>
+                        Адрес єлектронной почты
+                        <input type="email" name="email" placeholder="namesurname@gmail.com" autofocus="autofocus" class="email__input">
+                    </label>
+                    <label>
+                        Пароль : 
+                        <input type="password" name="password" class="password__input">
+                    </label>
+                    <label>
+                        Повторный пароль : 
+                        <input type="password" name="password" class="password__input">
+                    </label>
+                    
+                </p>
+                <label>
+                    <input type="checkbox" name="checkbox1">
+                    Запомнить меня
+                </label>
+                <label>
+                    <input type="checkbox" name="checkbox1">
+                    Я хочу получать увидомления 
+                </label>
+                <label>
+                    <input type="checkbox" name="checkbox1">
+                    Я принимаю условия использования сайта 
                 </label>
                 <label>
                     <input type="submit" name="submit" value="Войти" class="form__submit">
