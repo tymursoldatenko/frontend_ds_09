@@ -25,15 +25,17 @@ ul, ol {
 
 h1 {
     font-size: 2rem;
+    margin: 5px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin: 5px;
 }
 
 h3 {
     font-size: 1.1875rem;
-}
-
-.header__item {
-    display: inline-block;
-    outline: 2px solid black;
+    margin: 5px;
 }
 
 .header {
@@ -57,16 +59,23 @@ h3 {
     outline: 2px solid red;
 }
 
+.header__item {
+    display: inline-block;
+    outline: 2px solid black;
+}
+
 .header__link {
     color: rgb(0, 0, 0);
 }
+
+/* HEADER END */
 
 .main__special {
     background-color: rgb(243, 243, 243);
     border: 2px solid rgb(168, 168, 168);
     border-radius: 20px;
     width: 50%;
-    margin: 11% auto;
+    margin: 9% auto;
     padding: 2%;
 }
 
@@ -82,11 +91,20 @@ h3 {
     font-size: 1.2rem;
 }
 
+.main__item {
+    border-bottom: 3px solid black;
+}
+
+.main__item,
+.main__item--special {
+    padding: 2% 0;
+}
+
 label {
     margin: 1%;
 }
 
-.form__submit {
+input[class^="form__submit"] {
     width: 10%;
     margin: 1% 0 0 5%;
     border: 2px solid black;

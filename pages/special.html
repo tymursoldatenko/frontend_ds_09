@@ -40,18 +40,18 @@
     </header>
     <main class="main__special">
         <div class="main__item">
-            <h1 class="main__title">
+            <h2 class="main__title">
                 Войти
-            </h1>
+            </h2>
             <form class="main__form" method="post" action="https://fom.in.ua/echo">
                 <p class="form__item">
                     <label>
                         Адрес єлектронной почты
-                        <input type="email" name="email" placeholder="namesurname@gmail.com" autofocus="autofocus" class="email__input">
+                        <input type="email" name="email1" placeholder="namesurname@gmail.com" autofocus="autofocus" class="email__input">
                     </label>
                     <label>
                         Пароль : 
-                        <input type="password" name="password" class="password__input">
+                        <input type="password" name="password1" class="password__input">
                     </label>
                 </p>
                 <label>
@@ -63,43 +63,60 @@
                 </label>
             </form>
         </div>
-        <div class="main__item">
-            <h1 class="main__title">
+        <div class="main__item--special">
+            <h2 class="main__title">
                 Зарегестрироваться
-            </h1>
-            <form class="main__form" method="post" action="https://fom.in.ua/echo">
+            </h2>
+            <form class="main__form" method="post" action="https://fom.in.ua/echo" id="form1">
                 <p class="form__item">
                     <label>
                         Адрес єлектронной почты
-                        <input type="email" name="email" placeholder="namesurname@gmail.com" autofocus="autofocus" class="email__input">
+                        <input type="email" name="email2" placeholder="namesurname@gmail.com" autofocus="autofocus" class="email__input">
                     </label>
                     <label>
                         Пароль : 
-                        <input type="password" name="password" class="password__input">
+                        <input type="password" name="password2" class="password__input">
                     </label>
                     <label>
                         Повторный пароль : 
-                        <input type="password" name="password" class="password__input">
+                        <input type="password" name="password3" class="password__input">
                     </label>
                     
                 </p>
                 <label>
-                    <input type="checkbox" name="checkbox1">
+                    <input type="checkbox" name="checkbox2">
                     Запомнить меня
                 </label>
                 <label>
-                    <input type="checkbox" name="checkbox1">
+                    <input type="checkbox" name="checkbox3">
                     Я хочу получать увидомления 
                 </label>
                 <label>
-                    <input type="checkbox" name="checkbox1">
+                    <input type="checkbox" name="checkbox4" id="check">
                     Я принимаю условия использования сайта 
                 </label>
                 <label>
-                    <input type="submit" name="submit" value="Войти" class="form__submit">
+                    <input type="submit" name="submit" value="Зарегестрироваться" class="form__submit--special" disabled>
                 </label>
             </form>
         </div>
     </main>
+    <script>
+        var check = document.getElementById("check");
+
+            check.onclick = function () {
+                var sbmt = document.getElementById('form1');
+
+                if (check.checked) {
+                    // переводим элемент формы в активное состояние.
+                    sbmt.submit.disabled = false;
+                }
+                else {
+                    sbmt.submit.disabled = true;
+                }
+
+            }
+    </script>
+    
 </body>
 </html>
