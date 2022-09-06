@@ -68,6 +68,10 @@ h3 {
     color: rgb(0, 0, 0);
 }
 
+.header__item:hover {
+    border-bottom: 2px solid rgb(60, 163, 247);
+}
+
 /* HEADER END */
 
 .main__special {
