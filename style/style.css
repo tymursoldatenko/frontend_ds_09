@@ -119,3 +119,18 @@ input[class^="form__submit"] {
     background-image: url(../img/sea.jpg);
     background-size: cover;
 }
+
+.menu__item {
+    display: flex;
+    flex-direction: column;
+    margin: 1%;
+    border: 2px solid red;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    width: 68%;
+    margin: 5% auto;
+    border: 2px solid black;
+}
