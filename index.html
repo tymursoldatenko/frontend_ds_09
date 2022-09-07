@@ -38,45 +38,57 @@
             </li>
         </ul>
     </header>
-    <main class="main">
+    <main class="main">	
         <div class="main--special">
             <form method="post" action="https://fom.in.ua/echo" class="main__form">
                 <ul class="menu">
                     <li class="menu__item">
                         <h3 class="menu__title">
-                            Страна вылита :
+                            Город вылита :
                         </h3>
-                        <input type="text" class="menu__input">
+                        <select name="select1">
+                            <option value="value1">Харьков</option>
+                            <option value="value2">Киев</option>
+                            <option value="value3">Борисполь</option>
+                            <option value="value4">Днепр</option>
+                            <option value="value5">Львов</option>
+                        </select>
                     </li>
                     <li class="menu__item">
                         <h3 class="menu__title">
                             Страна :
                         </h3>
-                        <input type="text" class="menu__input">
+                        <select name="select1">
+                            <option value="value1">Турция </option>
+                            <option value="value2">Египет</option>
+                            <option value="value3">Доминиканская республика</option>
+                            <option value="value4">Мексика</option>
+                            <option value="value5">Албания</option>
+                        </select>
                     </li>
                     <li class="menu__item">
                         <h3 class="menu__title">
                             Дата от :
                         </h3>
-                        <input type="text" class="menu__input">
+                        <input type="date" class="menu__input">
                     </li>
                     <li class="menu__item">
                         <h3 class="menu__title">
                             Дата до :
                         </h3>
-                        <input type="text" class="menu__input">
+                        <input type="date" class="menu__input">
                     </li>
                     <li class="menu__item">
                         <h3 class="menu__title">
                             Ночей :
                         </h3>
-                        <input type="text" class="menu__input">
+                        <input type="number" min="1" max="27" step="1" class="menu__input">
                     </li>
                     <li class="menu__item">
                         <h3 class="menu__title">
                             Людей :
                         </h3>   
-                        <input type="text" class="menu__input">
+                        <input type="number" min="1" max="20" step="1" class="menu__input">
                     </li>
                 </ul>
             </form>

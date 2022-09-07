@@ -125,6 +125,7 @@ input[class^="form__submit"] {
     flex-direction: column;
     margin: 1%;
     border: 2px solid red;
+    width: 14.4%;
 }
 
 .menu {
@@ -133,4 +134,8 @@ input[class^="form__submit"] {
     width: 68%;
     margin: 5% auto;
     border: 2px solid black;
+}
+
+.menu__input {
+    border: 1px solid rgba(171, 170, 170, 0.863);
 }
