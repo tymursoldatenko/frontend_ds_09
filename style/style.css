@@ -13,6 +13,7 @@ html {
 body {
     font-size: 1rem;/* переводим в ремы*/
     line-height: 1;/*высота строки 1*/
+    font-family: 'Roboto', sans-serif;
 }
 
 a {
@@ -130,7 +131,7 @@ input[class^="form__submit"] {
     display: flex;
     flex-direction: row;
     width: 68%;
-    margin: 5% auto;
+    margin: 13% auto;
     border: 2px solid black;
 }
 
