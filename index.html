@@ -46,47 +46,51 @@
                         <h3 class="menu__title">
                             Город вылита :
                         </h3>
-                        <select name="select1">
-                            <option value="value1">Харьков</option>
-                            <option value="value2">Киев</option>
-                            <option value="value3">Борисполь</option>
-                            <option value="value4">Днепр</option>
-                            <option value="value5">Львов</option>
+                        <select name="cityFrom">
+                            <option value="cityFrom1">Харьков</option>
+                            <option value="cityFrom2">Киев</option>
+                            <option value="cityFrom3">Борисполь</option>
+                            <option value="cityFrom4">Днепр</option>
+                            <option value="cityFrom5">Львов</option>
                         </select>
                     </li>
                     <li class="menu__item">
                         <h3 class="menu__title">
                             Страна :
                         </h3>
-                        <select name="select1">
-                            <option value="value1">Турция </option>
-                            <option value="value2">Египет</option>
-                            <option value="value3">Доминиканская республика</option>
-                            <option value="value4">Мексика</option>
-                            <option value="value5">Албания</option>
+                        <select name="cityTo">
+                            <option value="cityTo1">Турция </option>
+                            <option value="cityTo2">Египет</option>
+                            <option value="cityTo3">Доминиканская республика</option>
+                            <option value="cityTo4">Мексика</option>
+                            <option value="cityTo5">Албания</option>
                         </select>
                     </li>
                     <li class="menu__item">
                         <h3 class="menu__title">
                             Дата начала :
                         </h3>
-                        <input type="date" class="menu__input">
+                        <input type="date" name="data" class="menu__input">
                     </li>
                     <li class="menu__item">
                         <h3 class="menu__title">
                             Ночей :
                         </h3>
-                        <input type="number" min="1" max="27" step="1" class="menu__input">
+                        <input type="number" min="1" max="27" step="1" name="night" class="menu__input">
                     </li>
                     <li class="menu__item">
                         <h3 class="menu__title">
                             Людей :
                         </h3>   
-                        <input type="number" min="1" max="20" step="1" class="menu__input">
+                        <input type="number" min="1" max="20" step="1" name="people" class="menu__input">
+                    </li>
+                    <li class="menu__item">
+                        <input type="submit" name="search" value="Поиск" class="manu__search">
                     </li>
                 </ul>
             </form>
         </div>
+
     </main>
 </body>
 </html>
