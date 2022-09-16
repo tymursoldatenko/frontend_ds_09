@@ -26,17 +26,17 @@ ul, ol {
 
 h1 {
     font-size: 2rem;
-    margin: 5px;
+    margin: 20px;
 }
 
 h2 {
     font-size: 1.5rem;
-    margin: 5px;
+    margin: 15px;
 }
 
 h3 {
     font-size: 1.1875rem;
-    margin: 5px;
+    margin: 10px 0;
 }
 
 .header {
@@ -137,4 +137,44 @@ input[class^="form__submit"] {
 
 .menu__input {
     border: 1px solid rgba(171, 170, 170, 0.863);
+}
+
+.additional>.additional__title {
+    border-bottom: 2px solid red;
+    width: 13%;
+}
+
+.additional>.additional__item {
+    margin: 3% 2%;
+    position: relative;
+}
+
+.additional__item--special {
+    display: flex;
+}
+
+.additional__text {
+    padding: 5%;
+}
+
+.additional__menu {
+    width: 30%;
+}
+
+.downdropmenu {
+    width: 13%;
+    margin: 17% 0 0 21%;
+    position: absolute;
+    border: 2px solid rgb(166, 165, 165);
+    z-index: 11;
+    background-color: rgba(255, 255, 255, 0.543);
+}
+
+.downdropmenu__item {
+    margin: 1%;
+    border-bottom: 1px solid rgba(201, 198, 198, 0.858);
+}
+
+.additional__picture {
+    width: 100%;
 }
