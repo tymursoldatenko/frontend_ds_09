@@ -13,41 +13,77 @@ body {
 
 a {
     text-decoration: none;/*подчёркивание ссылок и тд удаляем*/
+    color: black;
 }
 
 ul, ol {
     list-style: none;/**/
 }
 
-.header {
+.header,
+.header__menu,
+.main__form,
+.form__item,
+.menu__item,
+.menu,
+.additional__item--special {
     display: flex;
+}
+
+.header__item,
+.menu__item,
+.additional__item>.additional__title,
+.main__form,
+.form__item  {
+    font-size: 19px;
+}
+
+.header__item,
+.menu__item,
+.additional__item>.additional__title,
+.header__title,
+.main__title,
+.additional>.additional__title {
+    margin: 10px;
+}
+
+.header,
+.special .main__item {
+    border-bottom: 2px solid black;
+}
+.main__special
+input[class^="form__submit"],
+.menu {
+    border: 2px solid black;
+}
+
+.header,
+ul[class*="downdropmenu"] {
+    background-color: rgba(204, 203, 203, 0.822);
+}
+
+.menu__input,
+ul[class*="downdropmenu"] {
+    border: 1px solid rgba(171, 170, 170, 0.863);
+}
+
+.header {
     margin: 2% 0;
     padding: 0 2%;
-    background-color: rgba(250, 250, 250, 0.826);
-    border-bottom: 2px solid black;
 }
 
 .header__title {
     width: 35%;
-    font-size: 16px;
-    margin: 10px;
 }
 
 .header__menu {
     width: 65%;
-    display: flex;
     align-items: flex-end;
     justify-content: space-around;
 }
 
 .header__item {
     display: inline-block;
-    font-size: 19px;
-    margin: 10px;
-}
-
-.header__link {
-    color: rgb(0, 0, 0);
 }
 
 .header__item:hover {
@@ -56,7 +92,6 @@ ul, ol {
 
 .main__special {
     background-color: rgb(243, 243, 243);
-    border: 2px solid rgb(168, 168, 168);
     border-radius: 20px;
     width: 50%;
     margin: 9% auto;
@@ -64,21 +99,12 @@ ul, ol {
 }
 
 .main__title {
-    display: flex;
-    justify-content: center;
-    margin: 10px;
     font-size: 24px;
 }
 
 .main__form,
 .form__item {
-    display: flex;
     flex-direction: column;
-    font-size: 1.2rem;
-}
-
-.special .main__item {
-    border-bottom: 3px solid black;
 }
 
 .main__item,
@@ -93,7 +119,6 @@ label {
 input[class^="form__submit"] {
     width: 10%;
     margin: 1% 0 0 5%;
-    border: 2px solid black;
     border-radius: 20px;
 }
 
@@ -103,45 +128,26 @@ input[class^="form__submit"] {
 }
 
 .menu__item {
-    display: flex;
     flex-direction: column;
     margin: 1%;
     width: 14.4%;
-    font-size: 19px;
-    margin: 10px;
 }
 
 .menu {
-    display: flex;
-    flex-direction: row;
     width: 68%;
     margin: 13% auto;
-    border: 2px solid black;
 }
 
-.menu__input {
-    border: 1px solid rgba(171, 170, 170, 0.863);
-}
 
 .additional>.additional__title {
     border-bottom: 2px solid red;
-    width: 13%;
-    margin: 10px;
+    width: 15.7%;
     font-size: 24px;
 }
 
 .additional>.additional__item {
     margin: 3% 2% 8% 2%;
     position: relative;
-}
-
-.additional__item>.additional__title {
-    font-size: 19px;
-    margin: 10px;
-}
-
-.additional__item--special {
-    display: flex;
 }
 
 .additional__text {
@@ -155,28 +161,25 @@ input[class^="form__submit"] {
 }
 
 .downdropmenu {
-    margin: 10.15% 0 0 14.45%;
+    margin: 13.15% 0 0 18.45%;
 }
 
-ul[class^="downdropmenu"] {
-    width: 13%;
+ul[class*="downdropmenu"] {
+    width: 9%;
     position: absolute;
     border: 2px solid rgb(166, 165, 165);
-    z-index: 11;
-    background-color: rgba(255, 255, 255, 0.543);
 }
 
 .downdropmenu--special {
-    margin: 8.44% 0 0 14.45%;
+    margin: 11.44% 0 0 18.45%;
 }
 
 .downdropmenu--pramery {
-    margin: 8% 0 0 14.45%;
+    margin: 11% 0 0 18.45%;
 }
 
 .downdropmenu__item {
     margin: 1%;
-    border-bottom: 1px solid rgba(201, 198, 198, 0.858);
 }
 
 .additional__picture {
