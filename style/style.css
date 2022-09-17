@@ -34,7 +34,8 @@ ul, ol {
 .menu__item,
 .additional__item>.additional__title,
 .main__form,
-.form__item  {
+.form__item,
+.menu__search  {
     font-size: 19px;
 }
 
@@ -51,19 +52,18 @@ ul, ol {
 .special .main__item {
     border-bottom: 2px solid black;
 }
+
 .main__special
 input[class^="form__submit"],
 .menu {
     border: 2px solid black;
 }
 
-.header,
-ul[class*="downdropmenu"] {
+.header {
     background-color: rgba(204, 203, 203, 0.822);
 }
 
-.menu__input,
-ul[class*="downdropmenu"] {
+.menu__input {
     border: 1px solid rgba(171, 170, 170, 0.863);
 }
 
@@ -147,7 +147,6 @@ input[class^="form__submit"] {
 
 .additional>.additional__item {
     margin: 3% 2% 8% 2%;
-    position: relative;
 }
 
 .additional__text {
@@ -156,32 +155,22 @@ input[class^="form__submit"] {
     letter-spacing: 0.1rem;
 }
 
-.additional__menu {
-    width: 30%;
-}
-
-.downdropmenu {
-    margin: 13.15% 0 0 18.45%;
-}
-
-ul[class*="downdropmenu"] {
-    width: 9%;
-    position: absolute;
-    border: 2px solid rgb(166, 165, 165);
-}
-
-.downdropmenu--special {
-    margin: 11.44% 0 0 18.45%;
-}
-
-.downdropmenu--pramery {
-    margin: 11% 0 0 18.45%;
-}
-
-.downdropmenu__item {
-    margin: 1%;
-}
-
 .additional__picture {
-    width: 91.5%;
+    width: 28%;
+}
+
+.menu__item--special {
+    display: flex;
+    align-items: center;
+    margin: 0 5%;
+}
+
+.menu__search {
+    background-color: white;
+    border-radius: 10px;
+}
+
+.menu__search:hover {
+    background-color: rgba(235, 235, 235, 0.865);
+    cursor: pointer;
 }
