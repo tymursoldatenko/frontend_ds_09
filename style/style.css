@@ -145,7 +145,7 @@ input[class^="form__submit"] {
 }
 
 .additional>.additional__item {
-    margin: 3% 2%;
+    margin: 3% 2% 8% 2%;
     position: relative;
 }
 
