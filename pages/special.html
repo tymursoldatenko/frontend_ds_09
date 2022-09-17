@@ -84,7 +84,6 @@
                         Повторный пароль : 
                         <input type="password" name="password3" required="required" class="password__input">
                     </label>
-                    
                 </p>
                 <label>
                     <input type="checkbox" name="checkbox2">
@@ -95,30 +94,14 @@
                     Я хочу получать увидомления 
                 </label>
                 <label>
-                    <input type="checkbox" name="checkbox4" id="check">
+                    <input type="checkbox" name="checkbox4" required="required">
                     Я принимаю условия использования сайта 
                 </label>
                 <label>
-                    <input type="submit" name="submit" value="Зарегестрироваться" class="form__submit--special" disabled>
+                    <input type="submit" name="submit" value="Зарегестрироваться" class="form__submit--special">
                 </label>
             </form>
         </div>
     </main>
-    <script>
-        var check = document.getElementById("check");
-
-            check.onclick = function () {
-                var sbmt = document.getElementById('form1');
-
-                if (check.checked) {
-                    sbmt.submit.disabled = false;
-                }
-                else {
-                    sbmt.submit.disabled = true;
-                }
-
-            }
-    </script>
-    
 </body>
 </html>

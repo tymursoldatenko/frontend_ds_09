@@ -6,12 +6,7 @@
     box-sizing: border-box;/* что бы в ширину входило всё (пэдинги мэрджены и бордеры)*/
 }
 
-html {
-    font-size: 16px;/* задаюм фонт сайз*/
-}
-
 body {
-    font-size: 1rem;/* переводим в ремы*/
     line-height: 1;/*высота строки 1*/
     font-family: 'Roboto', sans-serif;
 }
@@ -22,21 +17,6 @@ a {
 
 ul, ol {
     list-style: none;/**/
-}
-
-h1 {
-    font-size: 2rem;
-    margin: 10px;
-}
-
-h2 {
-    font-size: 1.5rem;
-    margin: 10px;
-}
-
-h3 {
-    font-size: 1.1875rem;
-    margin: 10px 0;
 }
 
 .header {
@@ -154,7 +134,9 @@ input[class^="form__submit"] {
 }
 
 .additional__text {
-    padding: 5%;
+    padding: 2%;
+    width: 50%;
+    letter-spacing: 0.1rem;
 }
 
 .additional__menu {
@@ -178,7 +160,7 @@ ul[class^="downdropmenu"] {
 }
 
 .downdropmenu--pramery {
-    margin: 6.9% 0 0 14.45%;
+    margin: 8% 0 0 14.45%;
 }
 
 .downdropmenu__item {
@@ -187,5 +169,5 @@ ul[class^="downdropmenu"] {
 }
 
 .additional__picture {
-    width: 100%;
+    width: 91.5%;
 }
