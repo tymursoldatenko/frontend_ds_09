@@ -16,11 +16,11 @@ body {
 
 a {
     text-decoration: none;/*подчёркивание ссылок и тд удаляем*/
-    color: black;
+    color: black;/*цвет чёрный для ссылок*/
 }
 
 ul, ol {
-    list-style: none;/**/
+    list-style: none;
 }
 
 .header,
@@ -30,7 +30,7 @@ ul, ol {
 ul,li[class^="menu"],
 .additional__item--special {
     display: flex;
-}
+}/*задаём дисплеё флекс*/
 
 li[class$="item"],
 .additional__item>.additional__title,
@@ -38,56 +38,56 @@ li[class$="item"],
 .form__item,
 .search  {
     font-size: 19px;
-}
+}/*размер текста для подзаголовков*/
 
 .header__item,
 .menu__item,
 h1,h2,h3[class$="title"] {
     margin: 10px;
-}
+}/*мержин для всех заголовков*/
 
 .header,
 .special .main__item {
     border-bottom: 2px solid black;
-}
+}/*подчёркивание снизу*/
 
 .main__special
 input[class^="form__submit"],
 .menu {
     border: 2px solid black;
-}
+}/*обводка*/
 
 .header,
 .menu {
     background-color: rgba(204, 203, 203, 0.582);
-}
+}/*фоновый цвет*/
 
 .menu__input {
     border: 1px solid rgba(171, 170, 170, 0.863);
-}
+}/*обводка но серая и чучуть прозрачная*/
 
 .header {
     padding: 0 2%;
-}
+}/*пединг для шапки*/
 
 .header__title,
 .additional__picture {
     width: 35%;
-}
+}/*тут размер для аш1 и картинок))*/
 
 .header__menu {
     width: 65%;
     align-items: flex-end;
     justify-content: space-around;
-}
+}/*для навигации задаём размер и расположения поцентру снизу*/
 
 .header__item {
     display: inline-block;
-}
+}/*для лишек что бы были в рядок*/
 
 .header__item:hover {
     border-bottom: 2px solid rgb(61, 163, 247);
-}
+}/*это при наведение появляеться подчёркивание*/
 
 .main__special {
     background-color: rgb(243, 243, 243);
@@ -95,86 +95,86 @@ input[class^="form__submit"],
     width: 50%;
     margin: 9% auto;
     padding: 2%;
-}
+}/*цвет задниго фона, закругливаем углы, ширина, отступ снизу и сверху и пэдинг*/
 
 h2[class$="title"] {
     font-size: 24px;
-}
+}/*размер аш2*/
 
 .main__form,
 .form__item,
 .menu__item {
     flex-direction: column;
-}
+}/*задаём расположение в колонку*/
 
 .main__item,
 .main__item--special {
     padding: 2% 0;
-}
+}/*опять пэдинг только сверху и снизу*/
 
 label,
 .menu__item {
     margin: 1%;
-}
+}/*отступ вокруг*/
 
 input[class^="form__submit"] {
     width: 12%;
     margin: 1% 0 0 5%;
     border-radius: 15px;
-}
+}/*для инпутов сначалом класса "форм субмит" задаём размер, отступ и закругливаем*/
 
 .special {
     background-image: url(../img/sea.jpg);
     background-size: cover;
-}
+}/*задний фон-картинка и растягиваем на весь экран*/
 
 .header,
 .main {
     position: relative;
     z-index: 12;
-}
+}/*задаём относительное расположение и приблежаем*/
 
 .video {
     position: absolute;
     z-index: 1;
     width: 100%;
-}
+}/*задаём абсолютное расположение и отдоляем*/
 
 .menu__item {
     width: 14.4%;
-}
+}/*размер*/
 
 .menu {
     width: 68%;
     margin: 20% auto 30%;
-}
+}/*размер и отступы снизу и сверху, а по бокам авто */
 
 .additional>.additional__title {
     border-bottom: 2px solid red;
     width: 15.7%;
-}
+}/*подчёркивание и размер*/
 
 .additional>.additional__item {
     margin: 3% 2% 8% 2%;
-}
+}/*отступ*/
 
 .additional__text {
     padding: 2%;
     width: 50%;
     letter-spacing: 1.6px;
-}
+}/*пэдинг, размер и растояние между буквами*/
 
 .menu__item--special {
     align-items: center;
     margin: 0 5%;
-}
+}/*по центру и отступы по бокам*/
 
 .search {
     background-color: white;
     border-radius: 10px;
-}
+}/*цвет задниго фона и закругливаем*/
 
 .search:hover {
     background-color: rgba(235, 235, 235, 0.865);
     cursor: pointer;
-}
+}/*ууууура на часах 7:42 я еще не спал и это последний ком. при навидении: цвет заднего фона и курсор на поинт*/
