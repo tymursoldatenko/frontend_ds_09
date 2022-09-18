@@ -24,18 +24,16 @@ ul, ol {
 .header__menu,
 .main__form,
 .form__item,
-.menu__item,
-.menu,
+ul,li[class^="menu"],
 .additional__item--special {
     display: flex;
 }
 
-.header__item,
-.menu__item,
+li[class$="item"],
 .additional__item>.additional__title,
 .main__form,
 .form__item,
-.menu__search  {
+.search  {
     font-size: 19px;
 }
 
@@ -60,7 +58,7 @@ input[class^="form__submit"],
 }
 
 .header {
-    background-color: rgba(204, 203, 203, 0.822);
+    background-color: rgba(204, 203, 203, 0.582);
 }
 
 .menu__input {
@@ -68,7 +66,6 @@ input[class^="form__submit"],
 }
 
 .header {
-    margin: 2% 0;
     padding: 0 2%;
 }
 
@@ -127,6 +124,22 @@ input[class^="form__submit"] {
     background-size: cover;
 }
 
+.menu {
+    background-color: rgba(255, 255, 255, 0.667);
+}
+
+.header,
+.main {
+    position: relative;
+    z-index: 12;
+}
+
+.video {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+}
+
 .menu__item {
     flex-direction: column;
     margin: 1%;
@@ -135,9 +148,8 @@ input[class^="form__submit"] {
 
 .menu {
     width: 68%;
-    margin: 13% auto;
+    margin: 20% auto 30%;
 }
-
 
 .additional>.additional__title {
     border-bottom: 2px solid red;
@@ -159,18 +171,18 @@ input[class^="form__submit"] {
     width: 28%;
 }
 
-.menu__item--special {
+.manu__item--special {
     display: flex;
     align-items: center;
     margin: 0 5%;
 }
 
-.menu__search {
+.search {
     background-color: white;
     border-radius: 10px;
 }
 
-.menu__search:hover {
+.search:hover {
     background-color: rgba(235, 235, 235, 0.865);
     cursor: pointer;
 }
