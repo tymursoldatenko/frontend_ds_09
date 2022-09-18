@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
 * {
     margin: 0; /*8px delet */
     padding: 0; /* delet all padding*/
@@ -5,6 +7,7 @@
     border: 0;/* delet all border*/
     box-sizing: border-box;/* что бы в ширину входило всё (пэдинги мэрджены и бордеры)*/
 }
+
 
 body {
     line-height: 1;/*высота строки 1*/
@@ -39,10 +42,7 @@ li[class$="item"],
 
 .header__item,
 .menu__item,
-.additional__item>.additional__title,
-.header__title,
-.main__title,
-.additional>.additional__title {
+h1,h2,h3[class$="title"] {
     margin: 10px;
 }
 
@@ -57,7 +57,8 @@ input[class^="form__submit"],
     border: 2px solid black;
 }
 
-.header {
+.header,
+.menu {
     background-color: rgba(204, 203, 203, 0.582);
 }
 
@@ -69,7 +70,8 @@ input[class^="form__submit"],
     padding: 0 2%;
 }
 
-.header__title {
+.header__title,
+.additional__picture {
     width: 35%;
 }
 
@@ -95,12 +97,13 @@ input[class^="form__submit"],
     padding: 2%;
 }
 
-.main__title {
+h2[class$="title"] {
     font-size: 24px;
 }
 
 .main__form,
-.form__item {
+.form__item,
+.menu__item {
     flex-direction: column;
 }
 
@@ -109,23 +112,20 @@ input[class^="form__submit"],
     padding: 2% 0;
 }
 
-label {
+label,
+.menu__item {
     margin: 1%;
 }
 
 input[class^="form__submit"] {
-    width: 10%;
+    width: 12%;
     margin: 1% 0 0 5%;
-    border-radius: 20px;
+    border-radius: 15px;
 }
 
 .special {
     background-image: url(../img/sea.jpg);
     background-size: cover;
-}
-
-.menu {
-    background-color: rgba(255, 255, 255, 0.667);
 }
 
 .header,
@@ -141,8 +141,6 @@ input[class^="form__submit"] {
 }
 
 .menu__item {
-    flex-direction: column;
-    margin: 1%;
     width: 14.4%;
 }
 
@@ -154,7 +152,6 @@ input[class^="form__submit"] {
 .additional>.additional__title {
     border-bottom: 2px solid red;
     width: 15.7%;
-    font-size: 24px;
 }
 
 .additional>.additional__item {
@@ -164,15 +161,10 @@ input[class^="form__submit"] {
 .additional__text {
     padding: 2%;
     width: 50%;
-    letter-spacing: 0.1rem;
+    letter-spacing: 1.6px;
 }
 
-.additional__picture {
-    width: 28%;
-}
-
-.manu__item--special {
-    display: flex;
+.menu__item--special {
     align-items: center;
     margin: 0 5%;
 }
